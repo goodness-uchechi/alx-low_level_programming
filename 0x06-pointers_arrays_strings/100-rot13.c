@@ -3,6 +3,7 @@
 
 /**
  *rot13 - main function
+ *
  *@s: string to be encoded
  *Return: encoded string
  */
@@ -15,7 +16,7 @@ char *rot13(char *s)
 
 	for (i = 0 ; s[i] != '\0' ; i++)
 	{
-		for (j = 0 ; a[j] != '\0' ; j++)
+		for (j = 0 ; a[j] != 52; j++)
 		{
 			if (s[i] == a[j])
 			{
