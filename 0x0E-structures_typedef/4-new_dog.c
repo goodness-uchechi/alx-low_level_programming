@@ -2,8 +2,8 @@
 #include "dog.h"
 #include <stdlib.h>
 /**
-* _strlen - finds the length of a string
-* @s: string to find the lenght of
+* _strlen - finds the lenght of a string
+* @s: string to find the length of
 * Return: length of string
 */
 
@@ -19,7 +19,7 @@ return (i);
 /**
 * _strcpy - copy string
 * @dest: destination string
-* @arc: source string
+* @src: source string
 * Return: copied string
 */
 
@@ -28,14 +28,14 @@ char *_strcpy(char *dest, char *src)
 int len, i;
 
 len = _strlen(src);
-for (i = 0; i < len; i++)
+for  (i = 0; i < len; i++)
 dest[i] = src[i];
 dest[i] = '\0';
 return (dest);
 }
 
 /**
-* new_dog - create new dog
+* new_dog - creates new dog
 * @name: name of dog
 * @age: age of dog
 * @owner: owner of dog
@@ -71,4 +71,3 @@ _strcpy(ndog->owner, owner);
 ndog->age = age;
 return (ndog);
 }
-
